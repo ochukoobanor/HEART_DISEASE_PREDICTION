@@ -35,8 +35,10 @@ plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.show()
 
-# Save the model
-with open('heart_disease_model.pkl', 'wb') as f:
+
+# Save the Random Forest model with a descriptive name
+model_filename = 'random_forest_heart_disease_model.pkl'
+with open(model_filename, 'wb') as f:
     pickle.dump(model, f)
 
-print("Model saved as heart_disease_model.pkl")
+print(f"Model saved as {model_filename}")

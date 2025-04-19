@@ -44,8 +44,10 @@ plt.xlabel('Predicted')
 plt.ylabel('Actual')
 plt.show()
 
-# Save the model
-with open('heart_disease_model.pkl', 'wb') as f:
+# Save the Decision Tree model with a descriptive name
+with open('decision_tree_heart_disease_model.pkl', 'wb') as f:
     pickle.dump(model, f)
 
-print("Model saved as heart_disease_model.pkl")
+print("Model saved as decision_tree_heart_disease_model.pkl")
+
+
